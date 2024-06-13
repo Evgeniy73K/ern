@@ -115,11 +115,5 @@ public class Finder {
                 resultMap.put(k, nmMap.get(k));
             }
         });
-
-        ernMap.forEach((k, v) -> {
-            if(!nmMap.containsKey(k)) {
-                resultMap.put(k, ernMap.get(k));
-            }
-        });
     }
 }
