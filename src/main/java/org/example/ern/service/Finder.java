@@ -111,9 +111,13 @@ public class Finder {
 
     private void calculateResultMap() {
         nmMap.forEach((k, v) -> {
-            if (!ernMap.containsKey(k) || ernMap.get(k) - v != 0) {
+            if (!ernMap.containsKey(k)) {
                 resultMap.put(k, nmMap.get(k));
             }
+            if(ernMap.get(k) - v != 0) {
+                resultMap.put(k, ernMap.get(k) - v);
+            }
+
         });
     }
 }
