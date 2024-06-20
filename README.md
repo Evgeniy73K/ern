@@ -24,6 +24,9 @@ curl --location 'http://localhost:8080/findDiscrepancy' \
 "toDate": "2024-06-03",
 "taxRate": 13.0
 }'
+
+### Swagger:
+http://localhost:8080/swagger-ui/index.html
 ### Поля для запроса:
 - path - Указываем путь до xlsx файла. Для удобства я переименовываю его в короткое название, например, 55.xlsx.
 - fromDate, toDate - Диапазон дат. Если нужен один день, то toDate = fromDate.
